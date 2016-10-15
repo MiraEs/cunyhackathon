@@ -1,0 +1,11 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "75d75b35eaa60599e6199cbaeab1231c"
+build_time: [529878042, 219538000]
+inputs:
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/LoginViewController.swift": [529878042, 0]
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/WelcomePageViewController.swift": [529863789, 0]
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/UserData.swift": [529864746, 0]
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/DetailViewController.swift": [529876044, 0]
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/User.swift": [529866155, 0]
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/StudySessionsData.swift": [529877376, 0]
+  "/Users/Shashi/Documents/cunyhackathon/StudyBuddy/StudyBuddy/AppDelegate.swift": [529813613, 0]
