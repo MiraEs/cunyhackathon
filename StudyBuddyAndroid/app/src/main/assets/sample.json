@@ -1,0 +1,79 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "695",
+          "short_name" : "695",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "Park Avenue",
+          "short_name" : "Park Ave",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Upper East Side",
+          "short_name" : "UES",
+          "types" : [ "neighborhood", "political" ]
+        },
+        {
+          "long_name" : "Manhattan",
+          "short_name" : "Manhattan",
+          "types" : [ "political", "sublocality", "sublocality_level_1" ]
+        },
+        {
+          "long_name" : "New York",
+          "short_name" : "New York",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "New York County",
+          "short_name" : "New York County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New York",
+          "short_name" : "NY",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "10065",
+          "short_name" : "10065",
+          "types" : [ "postal_code" ]
+        },
+        {
+          "long_name" : "5024",
+          "short_name" : "5024",
+          "types" : [ "postal_code_suffix" ]
+        }
+      ],
+      "formatted_address" : "695 Park Ave, New York, NY 10065, USA",
+      "geometry" : {
+        "location" : {
+          "lat" : 40.7686084,
+          "lng" : -73.9650501
+        },
+        "location_type" : "ROOFTOP",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 40.76995738029149,
+            "lng" : -73.96370111970849
+          },
+          "southwest" : {
+            "lat" : 40.7672594197085,
+            "lng" : -73.9663990802915
+          }
+        }
+      },
+      "place_id" : "ChIJj26D6OtYwokR66BKfE7EB6A",
+      "types" : [ "street_address" ]
+    }
+  ],
+  "status" : "OK"
+}
