@@ -15,11 +15,13 @@ public class ActiveStudySessionListAdapter extends RecyclerView.Adapter<StudySes
 
 
     final Context context;
+    private final StudySessionViewHolder.SessionItemClickListener listener;
 
     private ArrayList<StudySession> data = new ArrayList<>();
 
-    public ActiveStudySessionListAdapter(Context context) {
+    public ActiveStudySessionListAdapter(Context context, StudySessionViewHolder.SessionItemClickListener listener) {
         this.context = context;
+        this.listener = listener;
     }
 
 
@@ -31,7 +33,7 @@ public class ActiveStudySessionListAdapter extends RecyclerView.Adapter<StudySes
 
     @Override
     public void onBindViewHolder(StudySessionViewHolder holder, int position) {
-        holder.setData(data.get(position));
+        holder.setData(data.get(position), listener);
     }
 
     @Override

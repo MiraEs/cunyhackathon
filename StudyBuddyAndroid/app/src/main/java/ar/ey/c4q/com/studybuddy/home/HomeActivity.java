@@ -38,7 +38,7 @@ import rx.functions.Action1;
 import rx.functions.Func1;
 
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements StudySessionViewHolder.SessionItemClickListener {
 
     MapView map;
     GoogleMap gMap;
@@ -52,7 +52,7 @@ public class HomeActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        adapter = new ActiveStudySessionListAdapter(this);
+        adapter = new ActiveStudySessionListAdapter(this, this);
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new SimpleDividerItemDecoration(
                 ContextCompat.getDrawable(this, R.drawable.line_divider)));
@@ -164,5 +164,12 @@ public class HomeActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         map.onDestroy();
+    }
+
+    @Override
+    public void onClickSessions(StudySession session) {
+        Intent i = new Intent(HomeActivity.this, StudySessionDetailedActivity.class);
+        i.putExtra("data", session);
+        startActivity(i);
     }
 }

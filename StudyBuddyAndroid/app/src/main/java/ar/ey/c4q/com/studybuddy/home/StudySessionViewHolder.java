@@ -13,8 +13,6 @@ import com.squareup.picasso.Picasso;
 import ar.ey.c4q.com.studybuddy.R;
 import ar.ey.c4q.com.studybuddy.models.StudySession;
 
-import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
-
 public class StudySessionViewHolder extends RecyclerView.ViewHolder {
 
     private final Context context;
@@ -24,6 +22,8 @@ public class StudySessionViewHolder extends RecyclerView.ViewHolder {
     private TextView start;
     private TextView end;
     private TextView distance;
+
+    private SessionItemClickListener clickListener;
 
     public StudySessionViewHolder(Context context, View itemView) {
         super(itemView);
@@ -37,12 +37,23 @@ public class StudySessionViewHolder extends RecyclerView.ViewHolder {
     }
 
     @SuppressLint("DefaultLocale")
-    public void setData(StudySession session) {
+    public void setData(final StudySession session, final SessionItemClickListener clickListener) {
         Picasso.with(context).load(session.getImageUrl()).into(image);
         topic.setText(session.getTopicOfStudy());
         locationName.setText(session.getLocationName());
         distance.setText(String.format("%s miles", session.getDistance()));
         start.setText(session.getDateStart());
         end.setText(session.getDateEnd());
+
+        itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickListener.onClickSessions(session);
+            }
+        });
+    }
+
+    interface SessionItemClickListener {
+        void onClickSessions(StudySession session);
     }
 }
