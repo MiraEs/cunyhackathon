@@ -22,10 +22,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loginPressed(_ sender: UIButton) {
         if checkCorrectLoginData() {
-            print("Good")
             incorrectDataLoginLabel.isHidden = true
             shouldGotoDetailView = true
-            performSegue(withIdentifier: "studySessionsIdentifier", sender: shouldGotoDetailView )
+            performSegue(withIdentifier: "viewSessionsIdentifier", sender: sender )
             
         }
         else {
@@ -98,16 +97,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        if segue.identifier == "studySessionsIdentifier" {
-            if let dvc = segue.destination as? DetailViewController {
-                shouldGotoDetailView = true
-            }
-        }
-
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        if segue.identifier == "studySessionsIdentifier" {
+//            if let dvc = segue.destination as? DetailViewController {
+//                shouldGotoDetailView = true
+//            }
+//        }
+//
+//        
+//    }
     
     
 }

@@ -111,6 +111,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -130,21 +131,26 @@ SWIFT_CLASS("_TtC10StudyBuddy11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class UITableViewCell;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC10StudyBuddy20DetailViewController")
-@interface DetailViewController : UIViewController
+SWIFT_CLASS("_TtC10StudyBuddy25DetailTableViewController")
+@interface DetailTableViewController : UITableViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified locationLabel;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIButton;
 @class UITextField;
-@class UIStoryboardSegue;
-@class UILabel;
 
 SWIFT_CLASS("_TtC10StudyBuddy19LoginViewController")
 @interface LoginViewController : UIViewController <UITextFieldDelegate>
@@ -158,7 +164,6 @@ SWIFT_CLASS("_TtC10StudyBuddy19LoginViewController")
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (BOOL)validateLoginEntries;
 - (BOOL)checkCorrectLoginData;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

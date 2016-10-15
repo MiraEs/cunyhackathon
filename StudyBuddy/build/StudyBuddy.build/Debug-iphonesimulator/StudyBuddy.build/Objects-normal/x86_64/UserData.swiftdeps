@@ -5,11 +5,11 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "IntegerLiteralType"
+- "Array"
+- "Dictionary"
 - "cunyStudents"
 - "StringLiteralType"
-- "IntegerLiteralType"
-- "Dictionary"
-- "Array"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Sa", "Element"]

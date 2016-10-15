@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		9B079F681DB28FFC007AC6A8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079F671DB28FFC007AC6A8 /* UserData.swift */; };
 		9B079F6B1DB29329007AC6A8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079F6A1DB29329007AC6A8 /* User.swift */; };
-		9B079F6E1DB2BF4D007AC6A8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079F6D1DB2BF4D007AC6A8 /* DetailViewController.swift */; };
+		9B079F6E1DB2BF4D007AC6A8 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079F6D1DB2BF4D007AC6A8 /* DetailTableViewController.swift */; };
 		9B079F701DB2C049007AC6A8 /* StudySessionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079F6F1DB2C049007AC6A8 /* StudySessionsData.swift */; };
+		9B079F721DB2D600007AC6A8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B079F711DB2D600007AC6A8 /* Session.swift */; };
 		E37799CF1DB1A0A10014861A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37799CE1DB1A0A10014861A /* AppDelegate.swift */; };
 		E37799D11DB1A0A10014861A /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37799D01DB1A0A10014861A /* WelcomePageViewController.swift */; };
 		E37799D41DB1A0A10014861A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37799D21DB1A0A10014861A /* Main.storyboard */; };
@@ -41,8 +42,9 @@
 /* Begin PBXFileReference section */
 		9B079F671DB28FFC007AC6A8 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		9B079F6A1DB29329007AC6A8 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9B079F6D1DB2BF4D007AC6A8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9B079F6D1DB2BF4D007AC6A8 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		9B079F6F1DB2C049007AC6A8 /* StudySessionsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudySessionsData.swift; sourceTree = "<group>"; };
+		9B079F711DB2D600007AC6A8 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		E37799CB1DB1A0A10014861A /* StudyBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37799CE1DB1A0A10014861A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37799D01DB1A0A10014861A /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				9B079F671DB28FFC007AC6A8 /* UserData.swift */,
 				9B079F6A1DB29329007AC6A8 /* User.swift */,
 				9B079F6F1DB2C049007AC6A8 /* StudySessionsData.swift */,
+				9B079F711DB2D600007AC6A8 /* Session.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -99,7 +102,7 @@
 			children = (
 				E37799D01DB1A0A10014861A /* WelcomePageViewController.swift */,
 				E37799FC1DB1A2210014861A /* LoginViewController.swift */,
-				9B079F6D1DB2BF4D007AC6A8 /* DetailViewController.swift */,
+				9B079F6D1DB2BF4D007AC6A8 /* DetailTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -293,7 +296,8 @@
 				E37799FD1DB1A2210014861A /* LoginViewController.swift in Sources */,
 				E37799D11DB1A0A10014861A /* WelcomePageViewController.swift in Sources */,
 				9B079F681DB28FFC007AC6A8 /* UserData.swift in Sources */,
-				9B079F6E1DB2BF4D007AC6A8 /* DetailViewController.swift in Sources */,
+				9B079F6E1DB2BF4D007AC6A8 /* DetailTableViewController.swift in Sources */,
+				9B079F721DB2D600007AC6A8 /* Session.swift in Sources */,
 				9B079F6B1DB29329007AC6A8 /* User.swift in Sources */,
 				9B079F701DB2C049007AC6A8 /* StudySessionsData.swift in Sources */,
 				E37799CF1DB1A0A10014861A /* AppDelegate.swift in Sources */,

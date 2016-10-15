@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 - "loginButton"
 depends-top-level:
-- "UIViewController"
 - "WelcomePageViewController"
 - "UIButton"
+- "UIViewController"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "loginButton"]

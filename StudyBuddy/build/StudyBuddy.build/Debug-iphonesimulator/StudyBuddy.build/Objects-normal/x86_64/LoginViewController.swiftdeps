@@ -6,38 +6,34 @@ provides-nominal:
 provides-member:
 - ["C10StudyBuddy19LoginViewController", ""]
 provides-dynamic-lookup:
-- "cunyIdTextField"
+- "shouldGotoDetailView"
+- "passwordTextField"
+- "incorrectDataLoginLabel"
 - "validateLoginEntries"
-- "loginPressed"
-- "shouldLetUserLogin"
 - "checkCorrectLoginData"
 - "textFieldShouldReturn"
-- "passwordTextField"
-- "prepare"
+- "cunyIdTextField"
 - "viewDidLoad"
-- "shouldGotoDetailView"
-- "incorrectDataLoginLabel"
+- "loginPressed"
+- "shouldLetUserLogin"
 depends-top-level:
-- !private "print"
-- !private "StringLiteralType"
-- "UILabel"
-- !private ">="
-- !private "DetailViewController"
-- "LoginViewController"
-- "UITextField"
-- "Bool"
-- !private "BooleanLiteralType"
-- "UIViewController"
-- !private "cunyStudents"
-- "UITextFieldDelegate"
-- !private "Int"
-- "UIStoryboardSegue"
-- "User"
 - "UIButton"
+- "UIViewController"
+- "UITextFieldDelegate"
 - !private "&&"
 - !private "=="
 - "AssignmentPrecedence"
-- "CastingPrecedence"
+- !private ">="
+- "User"
+- !private "Int"
+- !private "StringLiteralType"
+- "UILabel"
+- !private "cunyStudents"
+- "Bool"
+- !private "print"
+- "LoginViewController"
+- !private "BooleanLiteralType"
+- "UITextField"
 depends-member:
 - ["Ps9AnyObject", "Bool"]
 - !private ["Ps9AnyObject", "Int"]
@@ -47,8 +43,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cunyId"]
 - ["Ps9AnyObject", "cunyIdTextField"]
 - !private ["Ps9AnyObject", "cunyStudents"]
-- !private ["Ps9AnyObject", "destination"]
-- !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "incorrectDataLoginLabel"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isHidden"]
@@ -56,7 +50,6 @@ depends-member:
 - !private ["Ps9AnyObject", "password"]
 - ["Ps9AnyObject", "passwordTextField"]
 - !private ["Ps9AnyObject", "performSegue"]
-- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "shouldGotoDetailView"]
 - ["Ps9AnyObject", "shouldLetUserLogin"]
@@ -105,15 +98,12 @@ depends-member:
 - ["Ps7CVarArg", "checkCorrectLoginData"]
 - ["Ps7CVarArg", "cunyIdTextField"]
 - !private ["Ps7CVarArg", "cunyStudents"]
-- !private ["Ps7CVarArg", "destination"]
-- !private ["Ps7CVarArg", "identifier"]
 - ["Ps7CVarArg", "incorrectDataLoginLabel"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isHidden"]
 - ["Ps7CVarArg", "loginPressed"]
 - ["Ps7CVarArg", "passwordTextField"]
 - !private ["Ps7CVarArg", "performSegue"]
-- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "print"]
 - ["Ps7CVarArg", "shouldGotoDetailView"]
 - ["Ps7CVarArg", "shouldLetUserLogin"]
@@ -149,15 +139,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "checkCorrectLoginData"]
 - ["Ps28CustomDebugStringConvertible", "cunyIdTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "cunyStudents"]
-- !private ["Ps28CustomDebugStringConvertible", "destination"]
-- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "incorrectDataLoginLabel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - ["Ps28CustomDebugStringConvertible", "loginPressed"]
 - ["Ps28CustomDebugStringConvertible", "passwordTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "performSegue"]
-- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "shouldGotoDetailView"]
 - ["Ps28CustomDebugStringConvertible", "shouldLetUserLogin"]
@@ -195,15 +182,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "checkCorrectLoginData"]
 - ["Ps23CustomStringConvertible", "cunyIdTextField"]
 - !private ["Ps23CustomStringConvertible", "cunyStudents"]
-- !private ["Ps23CustomStringConvertible", "destination"]
-- !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "incorrectDataLoginLabel"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - ["Ps23CustomStringConvertible", "loginPressed"]
 - ["Ps23CustomStringConvertible", "passwordTextField"]
 - !private ["Ps23CustomStringConvertible", "performSegue"]
-- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "shouldGotoDetailView"]
 - ["Ps23CustomStringConvertible", "shouldLetUserLogin"]
@@ -219,7 +203,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "validateLoginEntries"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- ["C10StudyBuddy20DetailViewController", "deinit"]
 - ["Vs10Dictionary", "deinit"]
 - ["Ps9Equatable", "Bool"]
 - !private ["Ps9Equatable", "Int"]
@@ -229,15 +212,12 @@ depends-member:
 - ["Ps9Equatable", "checkCorrectLoginData"]
 - ["Ps9Equatable", "cunyIdTextField"]
 - !private ["Ps9Equatable", "cunyStudents"]
-- !private ["Ps9Equatable", "destination"]
-- !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "incorrectDataLoginLabel"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isHidden"]
 - ["Ps9Equatable", "loginPressed"]
 - ["Ps9Equatable", "passwordTextField"]
 - !private ["Ps9Equatable", "performSegue"]
-- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "shouldGotoDetailView"]
 - ["Ps9Equatable", "shouldLetUserLogin"]
@@ -277,15 +257,12 @@ depends-member:
 - ["Ps8Hashable", "checkCorrectLoginData"]
 - ["Ps8Hashable", "cunyIdTextField"]
 - !private ["Ps8Hashable", "cunyStudents"]
-- !private ["Ps8Hashable", "destination"]
-- !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "incorrectDataLoginLabel"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isHidden"]
 - ["Ps8Hashable", "loginPressed"]
 - ["Ps8Hashable", "passwordTextField"]
 - !private ["Ps8Hashable", "performSegue"]
-- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "shouldGotoDetailView"]
 - ["Ps8Hashable", "shouldLetUserLogin"]
@@ -321,11 +298,9 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - ["C10StudyBuddy19LoginViewController", "Bool"]
-- !private ["C10StudyBuddy19LoginViewController", "DetailViewController"]
 - !private ["C10StudyBuddy19LoginViewController", "Int"]
 - ["C10StudyBuddy19LoginViewController", "UIButton"]
 - ["C10StudyBuddy19LoginViewController", "UILabel"]
-- ["C10StudyBuddy19LoginViewController", "UIStoryboardSegue"]
 - ["C10StudyBuddy19LoginViewController", "UITextField"]
 - ["C10StudyBuddy19LoginViewController", "User"]
 - ["C10StudyBuddy19LoginViewController", "checkCorrectLoginData"]
@@ -337,7 +312,6 @@ depends-member:
 - ["C10StudyBuddy19LoginViewController", "loginPressed"]
 - ["C10StudyBuddy19LoginViewController", "passwordTextField"]
 - !private ["C10StudyBuddy19LoginViewController", "performSegue"]
-- ["C10StudyBuddy19LoginViewController", "prepare"]
 - !private ["C10StudyBuddy19LoginViewController", "print"]
 - ["C10StudyBuddy19LoginViewController", "shouldGotoDetailView"]
 - ["C10StudyBuddy19LoginViewController", "shouldLetUserLogin"]
@@ -378,7 +352,6 @@ depends-member:
 - ["PSo8NSCoding", "loginPressed"]
 - ["PSo8NSCoding", "passwordTextField"]
 - !private ["PSo8NSCoding", "performSegue"]
-- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "shouldGotoDetailView"]
 - ["PSo8NSCoding", "shouldLetUserLogin"]
@@ -407,7 +380,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "loginPressed"]
 - ["PSo26NSExtensionRequestHandling", "passwordTextField"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegue"]
-- ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "shouldGotoDetailView"]
 - ["PSo26NSExtensionRequestHandling", "shouldLetUserLogin"]
@@ -425,26 +397,21 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "characters"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "DetailViewController"]
 - !private ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UILabel"]
-- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "User"]
 - !private ["CSo8NSObject", "characters"]
 - ["CSo8NSObject", "checkCorrectLoginData"]
 - ["CSo8NSObject", "cunyIdTextField"]
 - !private ["CSo8NSObject", "cunyStudents"]
-- !private ["CSo8NSObject", "destination"]
-- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "incorrectDataLoginLabel"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isHidden"]
 - ["CSo8NSObject", "loginPressed"]
 - ["CSo8NSObject", "passwordTextField"]
 - !private ["CSo8NSObject", "performSegue"]
-- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "shouldGotoDetailView"]
 - ["CSo8NSObject", "shouldLetUserLogin"]
@@ -466,15 +433,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "checkCorrectLoginData"]
 - ["PSo16NSObjectProtocol", "cunyIdTextField"]
 - !private ["PSo16NSObjectProtocol", "cunyStudents"]
-- !private ["PSo16NSObjectProtocol", "destination"]
-- !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "incorrectDataLoginLabel"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - ["PSo16NSObjectProtocol", "loginPressed"]
 - ["PSo16NSObjectProtocol", "passwordTextField"]
 - !private ["PSo16NSObjectProtocol", "performSegue"]
-- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "shouldGotoDetailView"]
 - ["PSo16NSObjectProtocol", "shouldLetUserLogin"]
@@ -549,7 +513,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "loginPressed"]
 - ["PSo21UIAppearanceContainer", "passwordTextField"]
 - !private ["PSo21UIAppearanceContainer", "performSegue"]
-- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "shouldGotoDetailView"]
 - ["PSo21UIAppearanceContainer", "shouldLetUserLogin"]
@@ -565,6 +528,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "validateLoginEntries"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["CSo8UIButton", "deinit"]
 - ["PSo18UIContentContainer", "Bool"]
 - !private ["PSo18UIContentContainer", "Int"]
 - ["PSo18UIContentContainer", "User"]
@@ -576,7 +540,6 @@ depends-member:
 - ["PSo18UIContentContainer", "loginPressed"]
 - ["PSo18UIContentContainer", "passwordTextField"]
 - !private ["PSo18UIContentContainer", "performSegue"]
-- ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "shouldGotoDetailView"]
 - ["PSo18UIContentContainer", "shouldLetUserLogin"]
@@ -610,7 +573,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "loginPressed"]
 - ["PSo18UIFocusEnvironment", "passwordTextField"]
 - !private ["PSo18UIFocusEnvironment", "performSegue"]
-- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "shouldGotoDetailView"]
 - ["PSo18UIFocusEnvironment", "shouldLetUserLogin"]
@@ -631,11 +593,9 @@ depends-member:
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo7UILabel", "isHidden"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "DetailViewController"]
 - !private ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UILabel"]
-- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "User"]
 - ["CSo11UIResponder", "checkCorrectLoginData"]
@@ -647,7 +607,6 @@ depends-member:
 - ["CSo11UIResponder", "loginPressed"]
 - ["CSo11UIResponder", "passwordTextField"]
 - !private ["CSo11UIResponder", "performSegue"]
-- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "shouldGotoDetailView"]
 - ["CSo11UIResponder", "shouldLetUserLogin"]
@@ -674,7 +633,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "loginPressed"]
 - ["PSo30UIResponderStandardEditActions", "passwordTextField"]
 - !private ["PSo30UIResponderStandardEditActions", "performSegue"]
-- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
 - ["PSo30UIResponderStandardEditActions", "shouldGotoDetailView"]
 - ["PSo30UIResponderStandardEditActions", "shouldLetUserLogin"]
@@ -701,7 +659,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "loginPressed"]
 - ["PSo16UIStateRestoring", "passwordTextField"]
 - !private ["PSo16UIStateRestoring", "performSegue"]
-- ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "shouldGotoDetailView"]
 - ["PSo16UIStateRestoring", "shouldLetUserLogin"]
@@ -716,9 +673,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "validateLoginEntries"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- ["CSo17UIStoryboardSegue", "deinit"]
-- !private ["CSo17UIStoryboardSegue", "destination"]
-- !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["CSo11UITextField", "text"]
 - ["PSo19UITextFieldDelegate", "Bool"]
 - !private ["PSo19UITextFieldDelegate", "Int"]
@@ -755,7 +709,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "loginPressed"]
 - ["PSo18UITraitEnvironment", "passwordTextField"]
 - !private ["PSo18UITraitEnvironment", "performSegue"]
-- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "shouldGotoDetailView"]
 - ["PSo18UITraitEnvironment", "shouldLetUserLogin"]
@@ -774,11 +727,9 @@ depends-member:
 - !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "DetailViewController"]
 - !private ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UILabel"]
-- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "User"]
 - ["CSo16UIViewController", "checkCorrectLoginData"]
@@ -790,7 +741,6 @@ depends-member:
 - ["CSo16UIViewController", "loginPressed"]
 - ["CSo16UIViewController", "passwordTextField"]
 - !private ["CSo16UIViewController", "performSegue"]
-- ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "shouldGotoDetailView"]
 - ["CSo16UIViewController", "shouldLetUserLogin"]
@@ -840,15 +790,12 @@ depends-member:
 - ["Ps9_Hashable", "checkCorrectLoginData"]
 - ["Ps9_Hashable", "cunyIdTextField"]
 - !private ["Ps9_Hashable", "cunyStudents"]
-- !private ["Ps9_Hashable", "destination"]
-- !private ["Ps9_Hashable", "identifier"]
 - ["Ps9_Hashable", "incorrectDataLoginLabel"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isHidden"]
 - ["Ps9_Hashable", "loginPressed"]
 - ["Ps9_Hashable", "passwordTextField"]
 - !private ["Ps9_Hashable", "performSegue"]
-- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "print"]
 - ["Ps9_Hashable", "shouldGotoDetailView"]
 - ["Ps9_Hashable", "shouldLetUserLogin"]
@@ -873,7 +820,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "characters"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "init"]
 - !private ["Ps11_Strideable", "init"]
 depends-nominal:
@@ -892,7 +838,6 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "C10StudyBuddy20DetailViewController"
 - "Vs10Dictionary"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
@@ -941,6 +886,7 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
@@ -953,7 +899,6 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
-- "CSo17UIStoryboardSegue"
 - !private "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
 - !private "PSo11UITextInput"
@@ -977,7 +922,6 @@ depends-nominal:
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
@@ -991,4 +935,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "c1a49230d4d04c984c97d967b75c865a"
+interface-hash: "1a7045448fd0cb846eefe3b1e93cf0a4"
