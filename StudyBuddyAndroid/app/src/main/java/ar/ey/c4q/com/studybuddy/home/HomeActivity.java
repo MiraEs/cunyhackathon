@@ -80,7 +80,7 @@ public class HomeActivity extends AppCompatActivity implements StudySessionViewH
                     return;
                 }
                 googleMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(40.7659217, -73.96370569999999))
+                        .position(new LatLng(40.767929, -73.964001))
                         .title("You"));
 
                 CameraUpdate center = CameraUpdateFactory

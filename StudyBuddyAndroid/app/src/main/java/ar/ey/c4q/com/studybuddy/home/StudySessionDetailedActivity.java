@@ -62,7 +62,7 @@ public class StudySessionDetailedActivity extends AppCompatActivity {
                     return;
                 }
                 googleMap.addMarker(new MarkerOptions()
-                        .position(new LatLng(40.7659217, -73.96370569999999))
+                        .position(new LatLng(40.767929, -73.964001))
                         .title("You"));
 
                 googleMap.addMarker(new MarkerOptions()
@@ -75,7 +75,7 @@ public class StudySessionDetailedActivity extends AppCompatActivity {
 
                 CameraPosition zoom = new CameraPosition.Builder()
                         .target(new LatLng(40.7659217, -73.96370569999999))
-                        .zoom(13.7f)
+                        .zoom(13f)
                         .build();
                 googleMap.moveCamera(center);
                 googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(zoom));
