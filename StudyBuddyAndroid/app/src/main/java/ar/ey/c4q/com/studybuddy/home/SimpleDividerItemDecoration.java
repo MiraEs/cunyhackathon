@@ -1,19 +1,16 @@
 package ar.ey.c4q.com.studybuddy.home;
 
-import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import ar.ey.c4q.com.studybuddy.R;
-
 public class SimpleDividerItemDecoration extends RecyclerView.ItemDecoration {
+
     private Drawable mDivider;
+
     private int mOrientation;
 
     /**
@@ -31,7 +28,7 @@ public class SimpleDividerItemDecoration extends RecyclerView.ItemDecoration {
      *
      * @param canvas The {@link Canvas} onto which dividers will be drawn
      * @param parent The RecyclerView onto which dividers are being added
-     * @param state The current RecyclerView.State of the RecyclerView
+     * @param state  The current RecyclerView.State of the RecyclerView
      */
     @Override
     public void onDraw(Canvas canvas, RecyclerView parent, RecyclerView.State state) {
@@ -48,12 +45,13 @@ public class SimpleDividerItemDecoration extends RecyclerView.ItemDecoration {
      *
      * @param outRect The {@link Rect} of offsets to be added around the child
      *                view
-     * @param view The child view to be decorated with an offset
-     * @param parent The RecyclerView onto which dividers are being added
-     * @param state The current RecyclerView.State of the RecyclerView
+     * @param view    The child view to be decorated with an offset
+     * @param parent  The RecyclerView onto which dividers are being added
+     * @param state   The current RecyclerView.State of the RecyclerView
      */
     @Override
-    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+    public void getItemOffsets(Rect outRect, View view, RecyclerView parent,
+            RecyclerView.State state) {
         super.getItemOffsets(outRect, view, parent, state);
 
         if (parent.getChildAdapterPosition(view) == 0) {

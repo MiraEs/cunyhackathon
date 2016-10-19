@@ -1,12 +1,25 @@
 package ar.ey.c4q.com.studybuddy.models;
 
 
+import com.google.gson.annotations.SerializedName;
+
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.gson.annotations.SerializedName;
-
 public class StudySession implements Parcelable {
+
+    public static final Parcelable.Creator<StudySession> CREATOR
+            = new Parcelable.Creator<StudySession>() {
+        @Override
+        public StudySession createFromParcel(Parcel source) {
+            return new StudySession(source);
+        }
+
+        @Override
+        public StudySession[] newArray(int size) {
+            return new StudySession[size];
+        }
+    };
 
     @SerializedName("id")
     private String id;
@@ -40,6 +53,23 @@ public class StudySession implements Parcelable {
 
     @SerializedName("lat")
     private double latitude;
+
+    public StudySession() {
+    }
+
+    protected StudySession(Parcel in) {
+        this.id = in.readString();
+        this.topicOfStudy = in.readString();
+        this.imageUrl = in.readString();
+        this.dateStart = in.readString();
+        this.dateEnd = in.readString();
+        this.locationName = in.readString();
+        this.locationAddress = in.readString();
+        this.distance = in.readDouble();
+        this.numberOfScholars = in.readInt();
+        this.longitude = in.readDouble();
+        this.latitude = in.readDouble();
+    }
 
     public String getId() {
         return id;
@@ -85,11 +115,14 @@ public class StudySession implements Parcelable {
         return latitude;
     }
 
-
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof StudySession)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof StudySession)) {
+            return false;
+        }
 
         StudySession that = (StudySession) o;
 
@@ -101,7 +134,6 @@ public class StudySession implements Parcelable {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
-
 
     @Override
     public int describeContents() {
@@ -122,33 +154,4 @@ public class StudySession implements Parcelable {
         dest.writeDouble(this.longitude);
         dest.writeDouble(this.latitude);
     }
-
-    public StudySession() {
-    }
-
-    protected StudySession(Parcel in) {
-        this.id = in.readString();
-        this.topicOfStudy = in.readString();
-        this.imageUrl = in.readString();
-        this.dateStart = in.readString();
-        this.dateEnd = in.readString();
-        this.locationName = in.readString();
-        this.locationAddress = in.readString();
-        this.distance = in.readDouble();
-        this.numberOfScholars = in.readInt();
-        this.longitude = in.readDouble();
-        this.latitude = in.readDouble();
-    }
-
-    public static final Parcelable.Creator<StudySession> CREATOR = new Parcelable.Creator<StudySession>() {
-        @Override
-        public StudySession createFromParcel(Parcel source) {
-            return new StudySession(source);
-        }
-
-        @Override
-        public StudySession[] newArray(int size) {
-            return new StudySession[size];
-        }
-    };
 }

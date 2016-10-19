@@ -25,7 +25,7 @@ public class LoaderHelper {
             return new String(bytes);
 
         } catch (IOException e) {
-            Log.i("GuiFormData", "IOException: " + e.getMessage());
+            Log.e("GuiFormData", "IOException: " + e.getMessage());
         }
         return null;
     }

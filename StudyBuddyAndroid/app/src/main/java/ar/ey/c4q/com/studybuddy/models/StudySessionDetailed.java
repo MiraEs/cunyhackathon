@@ -5,4 +5,5 @@ package ar.ey.c4q.com.studybuddy.models;
  */
 
 public class StudySessionDetailed {
+
 }
