@@ -1,6 +1,6 @@
 #Study Buddy Android App
 
-##Buddy Up Android App Demo
+####Buddy Up Android App Demo
 
 ####Team Cuny Guardian
 
