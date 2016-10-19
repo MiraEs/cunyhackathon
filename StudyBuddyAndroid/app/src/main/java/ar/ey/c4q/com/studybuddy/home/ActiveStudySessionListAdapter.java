@@ -15,11 +15,13 @@ public class ActiveStudySessionListAdapter extends RecyclerView.Adapter<StudySes
 
 
     final Context context;
+
     private final StudySessionViewHolder.SessionItemClickListener listener;
 
     private ArrayList<StudySession> data = new ArrayList<>();
 
-    public ActiveStudySessionListAdapter(Context context, StudySessionViewHolder.SessionItemClickListener listener) {
+    public ActiveStudySessionListAdapter(Context context,
+            StudySessionViewHolder.SessionItemClickListener listener) {
         this.context = context;
         this.listener = listener;
     }

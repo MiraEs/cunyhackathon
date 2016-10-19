@@ -1,6 +1,8 @@
 package ar.ey.c4q.com.studybuddy.home;
 
 
+import com.squareup.picasso.Picasso;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,19 +10,23 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import ar.ey.c4q.com.studybuddy.R;
 import ar.ey.c4q.com.studybuddy.models.StudySession;
 
 public class StudySessionViewHolder extends RecyclerView.ViewHolder {
 
     private final Context context;
+
     private ImageView image;
+
     private TextView topic;
+
     private TextView locationName;
+
     private TextView start;
+
     private TextView end;
+
     private TextView distance;
 
     private SessionItemClickListener clickListener;
@@ -54,6 +60,7 @@ public class StudySessionViewHolder extends RecyclerView.ViewHolder {
     }
 
     interface SessionItemClickListener {
+
         void onClickSessions(StudySession session);
     }
 }

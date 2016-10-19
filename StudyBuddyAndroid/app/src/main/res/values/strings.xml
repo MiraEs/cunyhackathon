@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">StudyBuddy</string>
+    <string name="app_name">Buddy Up</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -22,4 +22,11 @@
     <string name="sign_up">Sign Up</string>
     <string name="welcome_title">Welcome to Study Buddy.</string>
     <string name="create_account">Create Account</string>
+    <string name="detailed_session_x_miles_away">%s miles away</string>
+    <string name="session_detailed_time_x">"Time: "</string>
+    <string name="session_detailed_materials_x">Materials: Some Textbook ISBN:13082103810283
+    </string>
+    <string name="session_detailed_additional_note_x">Additional Notes: For remote users, use Google
+        Hangout
+    </string>
 </resources>

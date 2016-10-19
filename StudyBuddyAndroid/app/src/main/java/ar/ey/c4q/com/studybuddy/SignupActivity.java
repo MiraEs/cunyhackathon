@@ -1,7 +1,6 @@
 package ar.ey.c4q.com.studybuddy;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
